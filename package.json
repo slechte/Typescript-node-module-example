@@ -3,7 +3,7 @@
   "description": "Dieses Projekt ist ein Beispielprojekt für ein node-module unter Verwendung von:",
   "version": "1.0.0",
   "main": "dist/src/index.js",
-  "types" : "dist/src/index.d.ts",
+  "types": "dist/src/index.d.ts",
   "scripts": {
     "test": "jasmine"
   },
@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/slechte/Typescript-node-module-example/issues"
   },
-  "homepage": "https://github.com/slechte/Typescript-node-module-example#readme"
+  "homepage": "https://github.com/slechte/Typescript-node-module-example#readme",
+  "devDependencies": {
+    "jasmine": "^2.9.0"
+  },
+  "dependencies": {
+    "@types/jasmine": "^2.8.6"
+  }
 }
