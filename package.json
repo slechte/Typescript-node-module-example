@@ -23,6 +23,8 @@
   },
   "dependencies": {
     "@types/jasmine": "^2.8.6",
-    "typedoc": "^0.10.0"
+    "@types/winston": "^2.3.7",
+    "typedoc": "^0.10.0",
+    "winston": "^2.3.0"
   }
 }
