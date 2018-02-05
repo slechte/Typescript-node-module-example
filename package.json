@@ -18,9 +18,11 @@
   },
   "homepage": "https://github.com/slechte/Typescript-node-module-example#readme",
   "devDependencies": {
+    "gulp-typedoc": "^2.2.0",
     "jasmine": "^2.9.0"
   },
   "dependencies": {
-    "@types/jasmine": "^2.8.6"
+    "@types/jasmine": "^2.8.6",
+    "typedoc": "^0.10.0"
   }
 }
