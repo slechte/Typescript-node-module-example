@@ -24,6 +24,8 @@
   "dependencies": {
     "@types/jasmine": "^2.8.6",
     "@types/winston": "^2.3.7",
+    "gulp": "^3.9.1",
+    "gulp-cli": "^2.0.1",
     "tslint": "^5.9.1",
     "typedoc": "^0.10.0",
     "winston": "^2.3.0"

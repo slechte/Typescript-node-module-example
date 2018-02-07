@@ -176,6 +176,7 @@ Gulp ist ein Tool um definierte Task auszuführen und kann über npm installiert
 
 ```
 npm install -g gulp-cli
+npm install gulp -D
 
 ```
 
