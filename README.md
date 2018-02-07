@@ -11,18 +11,19 @@ Dieses Projekt ist ein Beispielprojekt für ein node-module unter Verwendung von
 * winston
 * visual studio code
 
+
 # Vorbereitung
 
 - Visual Studio Code installieren
 - nodejs und npm installieren
 
 Einen Ordner für das Projekt anlegen. Dieser sollte keine Leerzeichen enthalten,
-da sonst der Nmae des node Moduls angepasst werden muss.
+da sonst der Name des Node Moduls angepasst werden muss.
 In diesem Ordner werden ein Ordner mit dem Namen src und ein Ordner mit dem Namen test angelegt.
 
 # Typescript Projekt anlegen
 
-Zunächst muss Typescript installiewrt werden. Dies geht mit folgendem Befehl:
+Zunächst muss Typescript installiert werden. Dies geht mit folgendem Befehl:
 
 
 ```
@@ -58,7 +59,7 @@ Dort werden folgende Konfigurationen vorgenommen:
       "jasmine"
     ],
   
-  "noEmitOnError": true, //Kein kompilieren bei Fehlern
+  "noEmitOnError": true, //Kein kompilieren bei Fehlern Nicht nach Erstellung vorhande?
   "noImplicitAny": true, //Es wird nicht automatisch any gewählt, falls kein Typ angegeben ist
   "strictNullChecks": true, //Fehler wenn null Variablen verwendet werden
   "noUnusedParameters": false //Fehler bei nicht genutzten Parametern
@@ -97,7 +98,7 @@ Diese enthält die Konfiguration für das Projekt und sollte ungefähr so ausseh
 
 ```
 
-Zusätzlich wird eine Dastei mit dem Namen .npmignore angelegt die folgenden Inhalt besitzt:
+Zusätzlich wird eine Datei mit dem Namen .npmignore angelegt die folgenden Inhalt besitzt:
 
 
 ```
@@ -143,7 +144,7 @@ Quelle: https://jasmine.github.io/pages/getting_started.html
 
 ## Debugger konfigurieren
 
-Um die Jasmine Tests in Visula Studi Code debuggen zu können, muss der Debugger über die Datei launch.json konfiguriert werden.
+Um die Jasmine Tests in Visula Studio Code debuggen zu können, muss der Debugger über die Datei launch.json konfiguriert werden.
 Diese kann in Visual Studio Code in der Debug Ansicht mit der Option Add Configuration im Dropdown Menü oben links erzeugt werden.
 Dabei kann erstmal nodejs als Konfiguration gewählt werden. Diese Konfiguration wird dann wie folgt angepasst um jasmine Tests starten und debuggen zu können:
 
@@ -187,7 +188,7 @@ Quelle: http://www.typescriptlang.org/docs/handbook/gulp.html
 # typedoc
 
 Typedoc ermöglicht die automatische Generierung von Dokumentation anhand von Kommentaren im Quellcode.
-Installiert wied es mit:
+Installiert wird es mit:
 
 
 ```
@@ -198,7 +199,7 @@ npm install typedoc
 
 ## gulp task für Typedoc
 
-Um die Dokumentation zu generiewrn, kann ein gulp task angelegt werden. Dazu muss zunächst das gulp Plugin für Typedoc installiert werden:
+Um die Dokumentation zu generiern, kann ein gulp task angelegt werden. Dazu muss zunächst das gulp Plugin für Typedoc installiert werden:
 
 
 ```
@@ -211,6 +212,8 @@ Anschließend kann der Task im gulpfile.js hinzugefügt werden.
 
 
 ```javascript
+var gulp = require('gulp'); 
+var typedoc = require("gulp-typedoc");
 gulp.task("typedoc", function() {
     return gulp
         .src(["*.ts"])
@@ -227,7 +230,7 @@ gulp.task("typedoc", function() {
 
 
 Dieser Task läst sich dann mit dem Befehl: gulp typedoc ausführen.
-Die erstellte DOkumentation landet dann im Ordner docs im Projektverzeichnis
+Die erstellte Dokumentation landet dann im Ordner docs im Projektverzeichnis
 
 Quelle: http://typedoc.org/guides/installation/
 
